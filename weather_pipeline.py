@@ -23,19 +23,13 @@ PREVIOUS_RUNS_URL = (
     "https://previous-runs-api.open-meteo.com/v1/forecast"
 )
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
-DATA_DIR = PROJECT_ROOT / "data"
-
-WEATHER_FILE = DATA_DIR / "weather_data.csv"
-
-FORECAST_FILE = DATA_DIR / "forecast_history.csv"
-
-ACTUAL_FILE = DATA_DIR / "actual_weather.csv"
-
-PREVIOUS_RUNS_FILE = DATA_DIR / "previous_runs.csv"
-
-ACCURACY_FILE = DATA_DIR / "forecast_accuracy.csv"
+WEATHER_FILE = BASE_DIR / "weather_data.csv"
+FORECAST_FILE = BASE_DIR / "forecast_history.csv"
+ACCURACY_FILE = BASE_DIR / "forecast_accuracy.csv"
+PREVIOUS_RUNS_FILE = BASE_DIR / "previous_runs.csv"
+ACCURACY_FILE = BASE_DIR / "forecast_accuracy.csv"
 
 def get_current_time():
 
